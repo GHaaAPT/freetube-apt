@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: knugihk.github.io/freetube-apt
+Label: knugihk.github.io/freetube-apt
+Codename: stable
+Date: Sun, 21 Nov 2021 07:55:10 UTC
+Architectures: amd64
+Components: main
+Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
+MD5Sum:
+ 11fde2c4164d01ba30f02dcf0fcfe9b5 679 main/binary-amd64/Packages
+ a611e2bfb742a22eb6dffa1aa55efd4e 463 main/binary-amd64/Packages.gz
+ 611d930e185d5890740cb18ebdc2e4f5 189 main/binary-amd64/Release
+SHA1:
+ 05bdd5354813f2a3e8c9847daf2c636d047c9ae4 679 main/binary-amd64/Packages
+ 0e806e5da928c708864d6184753d5bfe0ef8a00d 463 main/binary-amd64/Packages.gz
+ b2b2c09e3c8b8ff5ace991b3d57639678be981da 189 main/binary-amd64/Release
+SHA256:
+ 0994ddf1d915a31a84e71283eae82d1de9497c5d281b223a6a5d375d9bb3da6e 679 main/binary-amd64/Packages
+ 71b4e4b72e7b698c9f46eabd9c6357886afe9db33ccce199e3a184d78f72289f 463 main/binary-amd64/Packages.gz
+ 8b512a9284efbce35a962e978d8f461dd3aec843f52fd7f50c38e684d63eeabf 189 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmGZ+14ACgkQQWZzEzGo
+yHOpQw/+NAbfqxLXJozXOOP0ZFkrkDlT7wKnhf2LncFbfvXF4DmGD+qgu3bbJZ5z
+vIrZ1axm3qoJorvScqONLQYkeSlVbowYQYsWAjSAYCrcNDWcifLVaS08xNlCrJXQ
+4AJQAvbGQhqw3RinW4yNN1n9Uo4C6cXHNyCheF+lpnajefOsW88eRXqknZG4D5YL
+0IO+PzyQaD8U599mZM9cIsuGFisLKggQYGHH9XnlK3JCgFX4S4Whj5V7M5e7UX6K
+N1rh8/ifCt1LbIa+o+1mrzqBgucUWDzqeHhCFU/S+xP0nlW3mxP1nHybnogDyMjJ
+AAiF02RrfdiQm6nmGI3ZquDThs8nz2b0nracet0Br1kiHZD6KWEB3kCWGObuXoI4
+c5+WVDfJTsOiYHh7zxUQfYjlHaCldR/BUmOOZXAXuyMzdQWpTnJ6zBAfhC8p9DzQ
+/9IfV7gn4jVLiQJyIyvj6kt3BFMpPOUjgJGB7wa8HI3AT3m8zY3WuV1N08MJe0RV
+ilml19OUHLGi/t6rlWsGKrXSNUYhzFxwGX89Y+dIN0+gsD45XDHmER7ZikmfhUw/
++2hLuhljkcw82rD0Shc4ZaS+jRQMx9bZ0C/xJjC8AxjZsF47oL7YXxshy9pQl9de
+7+prwKi/OSPnfJ3FQNqX55hwoxMvz5BAUudeJDNGLAtjOxdVv6U=
+=3LMj
+-----END PGP SIGNATURE-----
