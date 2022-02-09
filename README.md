@@ -15,7 +15,7 @@ sudo apt install freetube -y
 ```
 
 # Checksum
-79a67af5e4e21962b1362364ab5be7b6bc8be3d1b664d9081d513bd6bd54b88f  pool/main/f/freetube/freetube_0.15.1_amd64.deb
+e5e7911d8e673796a3adaa1099861c883b3ea6b520065e6e209688d5b1241494  pool/main/f/freetube/freetube_0.16.0_amd64.deb
 
 # Copyright
 The FreeTube installer (deb file) is re-distributed in AGPLv3
