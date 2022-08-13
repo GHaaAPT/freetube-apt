@@ -1,19 +1,19 @@
 Origin: knugihk.github.io/freetube-apt
 Label: knugihk.github.io/freetube-apt
 Codename: stable
-Date: Wed, 03 Aug 2022 00:37:06 UTC
+Date: Sat, 13 Aug 2022 00:29:38 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
 MD5Sum:
- 06c1bc136fa87596092d003cc8bd0318 710 main/binary-amd64/Packages
- 1fe3ab8f58c34c3d9e295aa1ea9ccbb1 480 main/binary-amd64/Packages.gz
+ 270caa7a069fad424abc179fe4603eaa 710 main/binary-amd64/Packages
+ 78d53bfbb89eb0e6fa433673c8b9003f 480 main/binary-amd64/Packages.gz
  611d930e185d5890740cb18ebdc2e4f5 189 main/binary-amd64/Release
 SHA1:
- dd91f8b379f79c7e3d01881572bd0c6769c75901 710 main/binary-amd64/Packages
- 20c9a70acd8e430b6c6ab85d01c97a9728f21264 480 main/binary-amd64/Packages.gz
+ 0c93f7ab4c432f6ccd308a9a04d7703fa7d7499a 710 main/binary-amd64/Packages
+ e6cf5d000e9823a5a939e354f8c8773478cef115 480 main/binary-amd64/Packages.gz
  b2b2c09e3c8b8ff5ace991b3d57639678be981da 189 main/binary-amd64/Release
 SHA256:
- bf51cb5b3fbe8b7727e99d34de0d5e3d1f45be5f4bf0442bd790a361add476da 710 main/binary-amd64/Packages
- 642dcd7aeca0241790b1bcfa84990ad71e8dfa07211cc8325b4745228ee06433 480 main/binary-amd64/Packages.gz
+ 381999a2fc31076abddb99586b1b09a2c57ecbf01d4612f2d8f0f3931db74621 710 main/binary-amd64/Packages
+ 4bbcdfcb0d4712ab23d821c2649594943fee5c4422a584b85ad53180b571482e 480 main/binary-amd64/Packages.gz
  8b512a9284efbce35a962e978d8f461dd3aec843f52fd7f50c38e684d63eeabf 189 main/binary-amd64/Release
