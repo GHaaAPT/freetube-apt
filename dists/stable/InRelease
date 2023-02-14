@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: knugihk.github.io/freetube-apt
 Label: knugihk.github.io/freetube-apt
 Codename: stable
-Date: Thu, 03 Nov 2022 00:36:50 UTC
+Date: Tue, 14 Feb 2023 10:58:33 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
@@ -22,17 +22,17 @@ SHA256:
  8b512a9284efbce35a962e978d8f461dd3aec843f52fd7f50c38e684d63eeabf 189 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmNjDSMACgkQQWZzEzGo
-yHNqRA//SzLNKeRT02nTmqqb3oCfmYizI7DPTd5sI2Ro4v6kUirHtEq80Bd0c/Dn
-0qb1nvuFY7Il0ycaieLEVGLIJdR4jmR+gkuCWi57msoDql5uX69Am/uZ96wWsRSA
-VQSi4jGup4l8ZsGLQKkUi4rPMg1Y6lf96/YPOuMBRelstjp2h8nw7sEuqiCHC3hE
-oTNUi2EdyHt5ntjBfHWjYj6HLyB7V11nRUI9j3a0wQfsFWsFz0ZwWk9lDFsab7xs
-de8GtPGf+G4D1AJobVLnk16LOMW83dL66RjmzyI0nViU/8f7xcm4bIiDdQb7vFGI
-7Wn2/yyOyaBJHiafw8E6nA+OhUwnrYvFIMeH2MB5qplxlnD4hioShkdsV+56KR4E
-HavnaniR2iSAT0x4Gdc2T4qtHO9z6pBJWSjrtpDxSa1SbbZ00mhp6O+rkffwqv94
-fbfgZJSk3kTGJdkhKIVbXmV2HOXk2AXt2xX3TSGy6EhV+w0D4rH0ouYSWFcMc6YL
-fiNBLIm87f2vpcL5oe0sv4zFh2v2T1Vu35Pbri1pYjMFDJtxVl+o0CDKH+JqBNdi
-3LIKrAOElMuilQi2P+w+YGDy0FPq2MY0xE5qej1Oh24HHRVKCjl9Kt6CCqlOs38x
-uW8BdX2hHhJ0DHTqMPLBQt7jIW/20HoxNMJ8MuhQzdxUdyBx/qw=
-=pjMy
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmPraVkACgkQQWZzEzGo
+yHMTEhAAoLJ4BvXwOGc7jY26utPOoavspyYKs45hT8fxX5BbxKVrRLN00UadvOEQ
+dLIWDdV5BDFNweB7IjgPDL/2pyfFhjzj/Le8LyNmSY+YI9JlXl21jFc88FFfwatc
+W1btIwjwUQrs9E1njTPKdx5i+aRuf5l1l5bje9Da2HhEeCiLwxzM+E0JAXsLAEGz
+xFrGUiwSTmTZYg8k8b7nSV/7wESMqLO/4rwSsSydsOYuvA0LAcGq992NxFRh4j5v
+ixAzmmIIRqZo61PZfniOn6F2uew3tqfP0/Mk4NeBTYfzeWR4YJBlITZyYEMMSjBi
+sxR3ElUWMHl6I5oDXXBXU8TbbKLBBnzEG+VI0wXfkaaMrHYqHAL3uppBDYssevhe
+JRG9fbLFyV0nJ9tGI5OJuO/v38630dwU+B9CX3weMdITUpqiSJHfeQCk9dkH9Wwu
+rLqPHC6MVkA0kQrwfip7YnKYUg4Goq8sDi+/AmKjztJOsk9iGtEPsP7H7CRm1zfB
+bfhBZUDP7eZxlFnvcdejcOCzhIqzFwEElZlLnYM39S2yKtCHG/kdXuJDlCxGuTNR
+OV7X69baseuo/ACHa00bX2yg1iHLfKGFiUPY0IWtgRnC2iJy5HsKM+fpls1RD53w
+fQKQt9jNjGwC95xbbFhUw/mTfu7BxeCE7rq/jcfvOB3CT4DF8IM=
+=Vcjn
 -----END PGP SIGNATURE-----
