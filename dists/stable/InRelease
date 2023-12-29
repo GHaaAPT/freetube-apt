@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: ghaaapt.github.io/freetube-apt
 Label: ghaaapt.github.io/freetube-apt
 Codename: stable
-Date: Fri, 29 Dec 2023 14:43:22 UTC
+Date: Fri, 29 Dec 2023 14:45:40 UTC
 Architectures: amd64 arm64 armhf
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
@@ -40,17 +40,17 @@ SHA256:
  dbc515b8a2b06399dd44d9a16d53c3c80d58aacf50510408e7fc62742fdf2195 189 main/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmWO2woACgkQQWZzEzGo
-yHMl8g//eXCQCkLJ3X4UHOfkecwvD60H2c6DsHt3h7+fK5n6eNog6gt8pr1Jg8Y3
-5LczJMlcxaTqJLGCaA189Wv73p3mWHhNo8CO1kUDe3zYnwGQp9S9tFUYD4zNdMny
-/aJFCJ5uDd8WThc5Izh3lG3I/U1SkozeT+LoB+FRpARo/uuSNh7JfcjiTTlRlFGg
-IOiuCLKTqs28+bI0bQWm/mKL1RBtXP6aPeTNJFp1W4Tugjqe/lAhp7uNksEAHsz4
-zJH9LEPiBoLKJB2DPBY5gBxRI5C7T/WEftamgTiCy5JhF8Jm4xF4C/uEARujexSA
-+yUtutrRPaIz7c3Xg3Pd0SoXGdcsZFy4G0IX/C1lId6+a9IqgYBBGjIITjpJdwGI
-i6pt/sXib/AK9SZRMBeAjFzoVz1D1CuhQdyeDfxNrDFylK6gls37B5xqkfUxYvAB
-YG92VrShPslaAxj4WUn/T5d1Ejqm/RcLibZ5xtJk//bRcksFCmQGZjsmrAXxtVZH
-Z/HxQTYWxUsR7/jZZy6IuC0dD8jTXCVJvApIpttfWb/IYFUjlG+TxoSZdUntaS5n
-4SrqVbR7Vm2Xt76bGjtCP12WuYwnsbIf8aw+7gs4I1MCgaNr71ZS7N+YQjRpAzcq
-TlbzB/BifLKM42SzqFmO+Qy0cRq+rZtUXbg+CLdET7HQaH8+VVs=
-=eYH/
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmWO25QACgkQQWZzEzGo
+yHNaYRAAot69in2SEj8ifrXzo9QAEN66Bm8se/0p0lJQHWHtjZAGXG7XKKpB4g/I
+LpuqqJtSNW+D5BIFvTMdpQbR5iLNkmfa5XXfJlRGMh6jF9TSsYTXxJzJO28N1b4c
+1bQSz0dfsAlkB3xgKo3noziyJN3mfp/0B1oYxHNylZ0emfdgFF9f1CtA5OuYYdeI
+vozZCIjGF/HHZynA1FVOR2zacwywb6XbtvpOj7aarzf+JzPcSbbRKl1bPXQ2RI8W
+u7J/Q6egx1DtsD2tOlDeoCsWYF2jH17mza/6OCcp5if9WydUCPpJK0wAUzO7tHpN
+nW32XoLrcJI4AJNkW5lhK4yVLJyLKD//hpr4+wd1eJd5lYJ2X1K6nUOQ7q2wVTG+
+lOKia5FQ32X5Rqxi2XlOsMU0VKmfvqHycJFTKCT39LP8rXhx0j9/n4a7hwFIkhTB
+PC7s0e4iXwXGqYUW0P8a1gn9nowFwBhLDtw1lYDyF74apLmqq7tvJeEwjiP2BiXA
+oKXghCU8XcTOprOk7YQP1jE7NyvBqhCf2FwyfjsTR2ZUit6vaHZqU0Js5gV3kdXj
+WOzhCRfEClIJ8RGI3tuwZrZXIuJ35g/ny09gZedAYdLMh3dAd7gbr7uPUVN9OUE5
+knkwgd40XM/w+nXr36h5XRcMnkoO9l2ePYpKf4YFjQsaNQjHqMU=
+=8OyD
 -----END PGP SIGNATURE-----
