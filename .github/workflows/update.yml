@@ -17,11 +17,11 @@ jobs:
       PUSH: 1
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Import GPG key
         id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@v5
+        uses: crazy-max/ghaction-import-gpg@v6
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
@@ -39,25 +39,38 @@ jobs:
         run: |
           function update_repo() {
             ver=$(echo "$1" | tr -d 'v' | cut -d "-" -f 1)
-            reprepro --basedir "$(pwd)/meta" includedeb stable "./freetube_${ver}_amd64.deb"
+            reprepro --basedir "$(pwd)/meta" includedeb stable "./freetube_${ver}_amd64.deb" "./freetube_${ver}_arm64.deb" "./freetube_${ver}_armv7l.deb"
             if [ -d dists ]; then rm -r dists; fi
             if [ -d pool ]; then rm -r pool; fi
             mv meta/dists ./
             mv meta/pool ./
-            checksum=$(find pool/main/f/freetube/ -type f -exec sha256sum "{}" +)
-            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/f/freetube/freetube_[0-9]\.[0-9]+\.[0-9]_amd64.deb,$checksum," README.md
+            checksum_amd64=$(sha256sum pool/main/f/freetube/freetube_${ver}_amd64.deb)
+            checksum_arm64=$(sha256sum pool/main/f/freetube/freetube_${ver}_arm64.deb)
+            checksum_armv7l=$(sha256sum pool/main/f/freetube/freetube_${ver}_armhf.deb)
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/f/freetube/freetube_[0-9]\.[0-9]+\.[0-9]_amd64.deb,$checksum_amd64," README.md
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/f/freetube/freetube_[0-9]\.[0-9]+\.[0-9]_arm64.deb,$checksum_arm64," README.md
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/f/freetube/freetube_[0-9]\.[0-9]+\.[0-9]_armhf.deb,$checksum_armhf," README.md
             echo "PUSH=0" >> $GITHUB_ENV
           }
           
           function download_update() {
             if [ -f /tmp/verify.log ]; then rm /tmp/verify.log; fi
-            wget -q "$2" --show-progress
+            ver=$(echo "$1" | tr -d 'v' | cut -d "-" -f 1)
+            wget -q "https://github.com/FreeTubeApp/FreeTube/releases/download/$1/freetube_${ver}_amd64.deb" --show-progress
             if [ "$?" -eq "0" ]; then
-                echo "$1" > last_update
-                return 0
-            else
-                return 1
+              echo 'amd64 downloaded'
+              wget -q "https://github.com/FreeTubeApp/FreeTube/releases/download/$1/freetube_${ver}_arm64.deb" --show-progress
+              if [ "$?" -eq "0" ]; then
+                echo 'arm64 downloaded'
+                wget -q "https://github.com/FreeTubeApp/FreeTube/releases/download/$1/freetube_${ver}_armv7l.deb" --show-progress  
+                if [ "$?" -eq "0" ]; then
+                  echo 'armv7l downloaded'
+                  echo "$1" > last_update
+                  return 0
+                fi
+              fi
             fi
+            return 1
           }
            
           function compare (){
@@ -91,7 +104,7 @@ jobs:
               last_update=$(cat last_update)
               if compare "$last_update" "$latest"; then
                 echo 'Update available, downloading latest deb'
-                if download_update "$latest" "$releases"; then
+                if download_update "$latest"; then
                   update_repo "$latest"
                 fi
               else
