@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: ghaaapt.github.io/freetube-apt
 Label: ghaaapt.github.io/freetube-apt
 Codename: stable
-Date: Fri, 29 Dec 2023 14:45:40 UTC
+Date: Fri, 29 Dec 2023 14:49:00 UTC
 Architectures: amd64 arm64 armhf
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
@@ -40,17 +40,17 @@ SHA256:
  dbc515b8a2b06399dd44d9a16d53c3c80d58aacf50510408e7fc62742fdf2195 189 main/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmWO25QACgkQQWZzEzGo
-yHNaYRAAot69in2SEj8ifrXzo9QAEN66Bm8se/0p0lJQHWHtjZAGXG7XKKpB4g/I
-LpuqqJtSNW+D5BIFvTMdpQbR5iLNkmfa5XXfJlRGMh6jF9TSsYTXxJzJO28N1b4c
-1bQSz0dfsAlkB3xgKo3noziyJN3mfp/0B1oYxHNylZ0emfdgFF9f1CtA5OuYYdeI
-vozZCIjGF/HHZynA1FVOR2zacwywb6XbtvpOj7aarzf+JzPcSbbRKl1bPXQ2RI8W
-u7J/Q6egx1DtsD2tOlDeoCsWYF2jH17mza/6OCcp5if9WydUCPpJK0wAUzO7tHpN
-nW32XoLrcJI4AJNkW5lhK4yVLJyLKD//hpr4+wd1eJd5lYJ2X1K6nUOQ7q2wVTG+
-lOKia5FQ32X5Rqxi2XlOsMU0VKmfvqHycJFTKCT39LP8rXhx0j9/n4a7hwFIkhTB
-PC7s0e4iXwXGqYUW0P8a1gn9nowFwBhLDtw1lYDyF74apLmqq7tvJeEwjiP2BiXA
-oKXghCU8XcTOprOk7YQP1jE7NyvBqhCf2FwyfjsTR2ZUit6vaHZqU0Js5gV3kdXj
-WOzhCRfEClIJ8RGI3tuwZrZXIuJ35g/ny09gZedAYdLMh3dAd7gbr7uPUVN9OUE5
-knkwgd40XM/w+nXr36h5XRcMnkoO9l2ePYpKf4YFjQsaNQjHqMU=
-=8OyD
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmWO3FwACgkQQWZzEzGo
+yHNTSw//dU1dzWBOHfJa3brImjIh4wB2pdofVQKkDifp3HeTbLSVJxGHrsslYjwC
+Kym7ljqis/eF2g3OosFLWVsl39SiGjIvvddxPK1jCv1fwSm7m/0o4TlyGx7pUrbP
+6EvQXFOsCJi9pqv1J2CiSDWecyLGY9Xf49Uvay7Aho60CaThX9+MfF0SJRWuBw+i
+WCVk07S/A8wdGA9OnVZWGzC6urot1nfEYXRau6HMPfRnGdqI0tokgS09F0/DBusP
+ck3OfU8iF0C59mjH92QLdM8IjxSxez1fZVuiQR9c283xl8oBJzbesQ6W4jnigfZR
+0ISf/M5/VBk028KBvHA2uaHY5mlBQunqVcX2mryHqnTkiwiZmQFmiA6fUhOH53J/
+v7iNQJ1ClJAVlyRTN5FsxWQR/rk/Fu+g9qbVGiu2R64hoGRRnmhb2pq1tH0s356a
+1zooFWQlcEwaZ6VAJ4F7Mu+p+eNGjTHnT6DIfeHR9I8WQtFZADCL6DA5w65Xac6O
+Mk+G7o+ahVj1SeCTn72tehRmyqP+0pXvagubP387YN0H9l8O9hY/whGSSsVNzTRx
+DHoT4ujJo0i9/8YGpqTIP4tZPrDp6ByZ9LdLQU+lMzt4slrRpK/V393Dr1PJl4eg
+aQY0OIomaRainz7rnU3SU8qr7lp8i/Wwn9Hb/ICnOEZW3b8Xhqc=
+=WTZO
 -----END PGP SIGNATURE-----
