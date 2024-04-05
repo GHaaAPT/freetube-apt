@@ -15,9 +15,9 @@ sudo apt install freetube -y
 ```
 
 # Checksum
-7919ec77e2a1b5930d9af7e8e2db4b5c3152fcabe90a5c84743242c30313934c  pool/main/f/freetube/freetube_0.19.2_amd64.deb  
-6488b8f1a0590f2df44b0984efcd4b7c39abcf87d7849513fa142e951487acc1  pool/main/f/freetube/freetube_0.19.2_arm64.deb  
-7de7df677d116f05603798d7b847c7b3d2b59334451385cc6ba75c385d16268c  pool/main/f/freetube/freetube_0.19.2_armhf.deb  
+5a848ff7a9e77a1d285954bf9821fe16021a13180fac852913602936592a7fe2  pool/main/f/freetube/freetube_0.20.0_amd64.deb  
+25efcea433e0e6d0e1995746e01e2d1af0763bb69a4d8640f33d8680ad659afa  pool/main/f/freetube/freetube_0.20.0_arm64.deb  
+f3f4f03b725a33b7b4712d1d0e1119262587cd6cb2ac634d1d2619e323eacd3d  pool/main/f/freetube/freetube_0.20.0_armhf.deb  
 
 
 # Copyright
