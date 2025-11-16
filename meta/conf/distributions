@@ -1,0 +1,7 @@
+Origin: ghaaapt.github.io/freetube-apt
+Label: ghaaapt.github.io/freetube-apt
+Codename: stable
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
+SignWith: C2F59EA2C16FEE63AD7D6FEB4166731331A8C873
