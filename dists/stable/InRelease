@@ -1,0 +1,56 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: ghaaapt.github.io/freetube-apt
+Label: ghaaapt.github.io/freetube-apt
+Codename: stable
+Date: Sun, 16 Nov 2025 08:40:01 UTC
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
+MD5Sum:
+ 4da51947bb753c17c80ac77ff8b43d1d 722 main/binary-amd64/Packages
+ f9cdd1a342c857b0e79e7782b94ebb20 479 main/binary-amd64/Packages.gz
+ 030cc03c6dd5397bfd80f4d8fea94084 189 main/binary-amd64/Release
+ 8a32a9d404f5e891042fccecc2ad9ad9 722 main/binary-arm64/Packages
+ eb918db266c1e3ddf3b6000caabb10f4 480 main/binary-arm64/Packages.gz
+ 5f079b811c32da54b6367e1259776427 189 main/binary-arm64/Release
+ 01dbd4fea374abc3341ba4c3b79b53b8 722 main/binary-armhf/Packages
+ 730ae5da008ecf83c4b7f167654af21a 481 main/binary-armhf/Packages.gz
+ 8bfcfc29c3cca087bcd32edfb6860231 189 main/binary-armhf/Release
+SHA1:
+ 954a01d1dd42e7d34f3f6d230cdf7846b8a22ffd 722 main/binary-amd64/Packages
+ f7cc19c2d53f5eb9c583757203cf46d47ca9a894 479 main/binary-amd64/Packages.gz
+ d8a342ddb0673b5e26e3806d5cad6059e65caf92 189 main/binary-amd64/Release
+ 03bc849acfa3e809c137732731ec9709655b7ac5 722 main/binary-arm64/Packages
+ af1ba490d351ac18792ad6e7b504799d8a533aab 480 main/binary-arm64/Packages.gz
+ 62836e016680e1f8bac377f796d4b5c470514715 189 main/binary-arm64/Release
+ ca7d356f576654d48b5675e60eb0defa0660bbdc 722 main/binary-armhf/Packages
+ 4ac96f18527b67ca5e9771d648cd16df18c25a65 481 main/binary-armhf/Packages.gz
+ 61a50863f5514fa8c0886df3976a188522f64f8f 189 main/binary-armhf/Release
+SHA256:
+ 77f997bab8027db9acc1fea1824375599f7c2daa11898c0f11c9fc9da8b301ff 722 main/binary-amd64/Packages
+ 955c9a524efbcdd53220cb68b6a4ca2b8546203ad6f520abe5d76ca73353a81f 479 main/binary-amd64/Packages.gz
+ 5dc917523b56c917538ebe78db471d4378caf4f59201a8028a2b4342b672af50 189 main/binary-amd64/Release
+ 348bb33ed65e6ad266fecb24b089cc1e19bc7d4b1f4caf639d1313b3391e2cd6 722 main/binary-arm64/Packages
+ 648d96fd1464c393a54bb3e2224df2713ab57367c4a861cc1f3e07bc512a05bd 480 main/binary-arm64/Packages.gz
+ 9695f7a6b7fdf25f246ab07e620fa9421fb0993a3df4adef64a4bd03b7e2c1d3 189 main/binary-arm64/Release
+ 29f018315735fca681399b2869fd66a3cfbe8c8850fea41e3bca559baeaaa71e 722 main/binary-armhf/Packages
+ 186c16140564e5aae8922fae8d677d77155d3a276bf27cf2ede924b8f2039258 481 main/binary-armhf/Packages.gz
+ dbc515b8a2b06399dd44d9a16d53c3c80d58aacf50510408e7fc62742fdf2195 189 main/binary-armhf/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmkZjeEACgkQQWZzEzGo
+yHNV6A/8Cm6aPNnjM8vrY6jBi7DvjJHxkLxQEh3RRadcmUkDMAq+etIMwbcYsz1t
+wsRra0uEYQidbv87f83wJ8UvelvgO0t75m6JHG/uE4WZQw5W2X4FXAGr5DZ23ZqS
+g7+btasf/9f69Yo40+xHQOf0cfZsKU4wxsAAn1yOmdH8PMl8mOKzFUNl3r4A2oNF
+Q5LvyRcKeWUX4iA8jGQdSs40H9KSXnQPaA2K2S9QQyEm8a41+jjg02QsyexnEoZJ
+87TjS1OdnNOahPi0JH7ujECyBIuKeE4VQIcq+wNQtR7epeLOUfa98xn3mJNr4bj2
+UMOQqVrlHWvJJlnzKRGLvopXduWrMsqIlQ+5znP9HVwhsRZHBo62OlraZ5ZVYeBv
+I3YaWSuENP89I03y/Ng1m/0aUb/bOK4VAe0i4lsANj9bZ1R9jJjuFhHxMl017EEH
+ZIYIAnL0OnfZphEmx+jro4sSuaBDZxG5aqstNEQQx+9m3Zkzrc08JqYaX2AEqYfa
+r+zUieNOIv0gm19jPoX7WGAZDlOA1kkkTWzsMdLd+P/8LIaqjbaqi5vrebu/ZUKZ
+5LURi7HZo5/2qS2NRN7rDtgqU/gZNweOgTf+4f0GZwj9bdNSrh8kWYYCllsfD3j6
+TMgiD/DcAt8RPP8MLNgm4/efrU6X9Rbx7KYqsPvqlSKGIjlH3aA=
+=ncP7
+-----END PGP SIGNATURE-----
