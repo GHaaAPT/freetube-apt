@@ -19,18 +19,19 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v7
 
-      - name: Import GPG key
-        id: import_gpg
-        uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd
-        with:
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-      - name: GPG user IDs
+      - name: Import and Verify GPG Key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          PASSPHRASE: ${{ secrets.PASSPHRASE }}
         run: |
-          echo "fingerprint: ${{ steps.import_gpg.outputs.fingerprint }}"
-          echo "keyid:       ${{ steps.import_gpg.outputs.keyid }}"
-          echo "name:        ${{ steps.import_gpg.outputs.name }}"
-          echo "email:       ${{ steps.import_gpg.outputs.email }}"
+          echo "$GPG_PRIVATE_KEY" > private.key
+          gpg --batch --import private.key
+          rm private.key
+          echo "--- Key Details ---"
+          gpg --list-secret-keys --keyid-format LONG --with-fingerprint
+          echo -e "\n--- Summary ---"
+          gpg --list-secret-keys --keyid-format LONG --with-colons | \
+          awk -F: '/^uid:/ {print "Name/Email: " $10} /^sec:/ {print "KeyID: " $5}'
       # Runs a set of commands using the runners shell
       - name: Install dependencies
         run: |
