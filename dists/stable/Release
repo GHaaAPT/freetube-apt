@@ -1,37 +1,37 @@
 Origin: ghaaapt.github.io/freetube-apt
 Label: ghaaapt.github.io/freetube-apt
 Codename: stable
-Date: Tue, 21 Jul 2026 02:00:56 UTC
+Date: Thu, 13 Aug 2026 01:19:31 UTC
 Architectures: amd64 arm64 armhf
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
 MD5Sum:
- 553189018bb0dd598a8788cc57554007 720 main/binary-amd64/Packages
- 6677cd8bf67e720001d91d2e5a6f3ab2 479 main/binary-amd64/Packages.gz
+ f06d3ac907e5f4cded6667e8880af87b 720 main/binary-amd64/Packages
+ 8127e483bf2283a108b6ab8f5d1a3787 479 main/binary-amd64/Packages.gz
  030cc03c6dd5397bfd80f4d8fea94084 189 main/binary-amd64/Release
- 7c2d27d7f07038de9e19d4c032f51e86 720 main/binary-arm64/Packages
- c8e9e99faa1ccf229c4d7606f09c54d6 479 main/binary-arm64/Packages.gz
+ 6f4eb4cfca23a2f543ec60b6a1bb32b1 720 main/binary-arm64/Packages
+ df46197b45db52ce6a797ed8855d45ba 479 main/binary-arm64/Packages.gz
  5f079b811c32da54b6367e1259776427 189 main/binary-arm64/Release
- f6f363698a267d2bfa58139967871aea 720 main/binary-armhf/Packages
- ae11a22275decd3fc998b9adbfc259b4 481 main/binary-armhf/Packages.gz
+ 2bf4553cef3d9c81c63afa3338690b9c 720 main/binary-armhf/Packages
+ 11064ae883a1b89a4a65f3a1b1fde3bd 480 main/binary-armhf/Packages.gz
  8bfcfc29c3cca087bcd32edfb6860231 189 main/binary-armhf/Release
 SHA1:
- 69045f9c38cec34c60e45a267d37f6ddfb77b90f 720 main/binary-amd64/Packages
- e3db947b983e166f50ab8dfdc48e27916862291a 479 main/binary-amd64/Packages.gz
+ 89b3b2175244f7c8f9e6d961467226c222d828bb 720 main/binary-amd64/Packages
+ b45ce862a3188e6e716cb601520473076bc26002 479 main/binary-amd64/Packages.gz
  d8a342ddb0673b5e26e3806d5cad6059e65caf92 189 main/binary-amd64/Release
- 83ffd4192485dfae0ecae089ae2255eb4e584a67 720 main/binary-arm64/Packages
- 8de685312734c08f6402fa2397b5664899336f05 479 main/binary-arm64/Packages.gz
+ f5381612d1827e35513bea581272d56d65494bd2 720 main/binary-arm64/Packages
+ 719ecc1d4839e73a707d01595ebacf646f844446 479 main/binary-arm64/Packages.gz
  62836e016680e1f8bac377f796d4b5c470514715 189 main/binary-arm64/Release
- 007f8fd311a4f979621c4afda11ab8e77427c735 720 main/binary-armhf/Packages
- cbdd6f91ab7ea4a3cb17291987b99f6c6a95e261 481 main/binary-armhf/Packages.gz
+ fbbdcc9ac79385719c51239771605e339951a0fe 720 main/binary-armhf/Packages
+ ec964975ef8f57412397f4ef4f212b12e5652b1f 480 main/binary-armhf/Packages.gz
  61a50863f5514fa8c0886df3976a188522f64f8f 189 main/binary-armhf/Release
 SHA256:
- 6d780e0bc32aa38e2266300d1a6c178d7184f565fadba4cab7fe96412c86a114 720 main/binary-amd64/Packages
- ee81938d0fecabe1aca0be5e26cb5315e2af5f0b426cbb2831029cefb07b0ff7 479 main/binary-amd64/Packages.gz
+ dbe6477fa75a8ffe331b7391660b7ee0a23f409be9fed75d514c87ca87a93b52 720 main/binary-amd64/Packages
+ 2f57a5355dfa81b5087125298faf7a9f8c7952dd69c609f3dbf10b0dbd6b9b16 479 main/binary-amd64/Packages.gz
  5dc917523b56c917538ebe78db471d4378caf4f59201a8028a2b4342b672af50 189 main/binary-amd64/Release
- ccc2e0e0c6658a44a6b3e04de1acc8602ecfe40c9e66a7d551f6c5d4e58aab4a 720 main/binary-arm64/Packages
- fe803915c5bd8973ff79580f4faee6e8cd7a95796a0d98b5b99574305bebc205 479 main/binary-arm64/Packages.gz
+ 912c6cf87f37eb36edc9bc2b85aadd2d64057fbddc226b8ba8b4f8f33da90f78 720 main/binary-arm64/Packages
+ 85ff789ded133964933bed55ecd5a652529fcbf7c4e9e8f06731dbcb8112b667 479 main/binary-arm64/Packages.gz
  9695f7a6b7fdf25f246ab07e620fa9421fb0993a3df4adef64a4bd03b7e2c1d3 189 main/binary-arm64/Release
- 1b1e04ef2c442280124f1a2838f7ab7fb0e5b952fa17f032c17d439a0fdf18d0 720 main/binary-armhf/Packages
- 36ddd060b621c763b49e0484f9e9e703c81bd38e35af6c21e6809c9032ae97be 481 main/binary-armhf/Packages.gz
+ 10b791018d51146fc9cec5819a955c5c3a4ea37478b2c71e3b8900aabfe0a60b 720 main/binary-armhf/Packages
+ 8d07950567827087f3157a1c2ddc141636c9e6a9146cd10c7f0d3ada1cc18865 480 main/binary-armhf/Packages.gz
  dbc515b8a2b06399dd44d9a16d53c3c80d58aacf50510408e7fc62742fdf2195 189 main/binary-armhf/Release
