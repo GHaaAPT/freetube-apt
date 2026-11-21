@@ -1,0 +1,119 @@
+name: Update Deb
+
+on:
+  schedule:
+    - cron: '0 0 */2 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      PUSH: '1'
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Import and Verify GPG Key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          echo "$GPG_PRIVATE_KEY" > private.key
+          gpg --batch --import private.key
+          rm private.key
+          echo "--- Key Details ---"
+          gpg --list-secret-keys --keyid-format LONG --with-fingerprint
+          echo -e "\n--- Summary ---"
+          gpg --list-secret-keys --keyid-format LONG --with-colons | \
+          awk -F: '/^uid:/ {print "Name/Email: " $10} /^sec:/ {print "KeyID: " $5}'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y reprepro
+
+      - name: Check Update
+        run: |
+          function update_repo() {
+            ver=$(echo "$1" | tr -d 'v' | cut -d "-" -f 1)
+            deb_ver=$(echo "$1" | tr -d 'v' | sed -e 's/-beta/_beta/g')
+            reprepro --basedir "$(pwd)/meta" includedeb stable "./freetube_${deb_ver}_amd64.deb" "./freetube_${deb_ver}_arm64.deb"
+            if [ -d dists ]; then rm -r dists; fi
+            if [ -d pool ]; then rm -r pool; fi
+            mv meta/dists ./
+            mv meta/pool ./
+            checksum_amd64=$(sha256sum pool/main/f/freetube/freetube_${ver}_amd64.deb)
+            checksum_arm64=$(sha256sum pool/main/f/freetube/freetube_${ver}_arm64.deb)
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/f/freetube/freetube_[0-9]\.[0-9]+\.[0-9]+(-beta)?_amd64.deb,$checksum_amd64," README.md
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/f/freetube/freetube_[0-9]\.[0-9]+\.[0-9]+(-beta)?_arm64.deb,$checksum_arm64," README.md
+            echo "PUSH=0" >> $GITHUB_ENV
+          }
+
+          function download_update() {
+            if [ -f /tmp/verify.log ]; then rm /tmp/verify.log; fi
+            ver=$(echo "$1" | tr -d 'v' | sed -e 's/-beta/_beta/g')
+            wget -q "https://github.com/FreeTubeApp/FreeTube/releases/download/$1/freetube_${ver}_amd64.deb"
+            if [ "$?" -eq "0" ]; then
+              echo 'amd64 downloaded'
+              wget -q "https://github.com/FreeTubeApp/FreeTube/releases/download/$1/freetube_${ver}_arm64.deb"
+              if [ "$?" -eq "0" ]; then
+                echo 'arm64 downloaded'
+                echo "$1" > last_update
+                return 0
+              fi
+            fi
+            return 1
+          }
+
+          echo 'Checking update...'
+          releases=$(wget -qO- https://freetubeapp.io/#download | grep -o 'https://github.com/FreeTubeApp/FreeTube/releases/download/.*/freetube_.*_amd64.deb')
+          latest=$(echo "$releases" | grep -Eo 'v[0-9]+\.[0-9]+\.[0-9]+(-beta)?' | head -n 1)
+          if [ -z "$latest" ]; then
+            echo "Failed to detect latest version"
+            exit 1
+          fi
+
+          echo "PUSH=1" >> $GITHUB_ENV
+          if [ -f 'last_update' ]; then
+            last_update=$(cat last_update)
+            if dpkg --compare-versions "${latest#v}" gt "${last_update#v}"; then
+              echo 'Update available, downloading latest deb'
+              if download_update "$latest"; then
+                update_repo "$latest"
+              fi
+            else
+              echo 'No update available'
+            fi
+          else
+            echo 'No version file found, assuming update available'
+            if download_update "$latest"; then
+              update_repo "$latest"
+            fi
+          fi
+
+      - name: Commit repo changes
+        if: env.PUSH == '0'
+        run: |
+          git status
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add last_update dists pool README.md
+          git commit -m "Update packages"
+          git push
+
+      - name: Update activity timestamp (Monthly Keep-Alive)
+        if: env.PUSH != '0'
+        run: |
+          # Only commit if it's the 1st day of the month (UTC)
+          if [ "$(TZ=UTC date +%d)" = "01" ]; then
+            echo "Last monthly heartbeat: $(TZ=UTC date)" > UPDATE
+            echo "Random hex: $(openssl rand -hex 8)" >> UPDATE
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add UPDATE
+            git commit -m "chore: monthly keep-alive"
+            git push
+          else
+            echo "Not the 1st of the month. Skipping keep-alive commit."
+          fi
