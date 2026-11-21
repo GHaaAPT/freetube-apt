@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: ghaaapt.github.io/freetube-apt
+Label: ghaaapt.github.io/freetube-apt
+Codename: stable
+Date: Sat, 21 Nov 2026 15:03:23 UTC
+Architectures: amd64 arm64
+Components: main
+Description: Unofficial APT repository for Debian/Ubuntu client of FreeTube
+MD5Sum:
+ 7b4eb8ae785ce90d769895578f3e28cb 707 main/binary-amd64/Packages
+ 7a2d8502e97a57d3208812307a8fec20 480 main/binary-amd64/Packages.gz
+ 030cc03c6dd5397bfd80f4d8fea94084 189 main/binary-amd64/Release
+ 8e4d636c863f4be663821043de960806 706 main/binary-arm64/Packages
+ c33791a5fb8554ef2731215f47545377 479 main/binary-arm64/Packages.gz
+ 5f079b811c32da54b6367e1259776427 189 main/binary-arm64/Release
+SHA1:
+ 8670bba343d7071e4b299e734c49ef41a66208fc 707 main/binary-amd64/Packages
+ e392884a5512b512c8afa031e476d3a3773821b4 480 main/binary-amd64/Packages.gz
+ d8a342ddb0673b5e26e3806d5cad6059e65caf92 189 main/binary-amd64/Release
+ 79d6352b6972c7a6618c47e1015796cf4b83461e 706 main/binary-arm64/Packages
+ d2ee1c4cda50a8e233ad8625fc84e0270f7f7981 479 main/binary-arm64/Packages.gz
+ 62836e016680e1f8bac377f796d4b5c470514715 189 main/binary-arm64/Release
+SHA256:
+ 8778cbb0af80f93ad9006effbddbc8181a07fd38c1ea24d57c620d6de114ae0d 707 main/binary-amd64/Packages
+ b976e1a2f37b405e5d2816058fd45be6fd1c283f3a840837aa0c6ae6e773c8d8 480 main/binary-amd64/Packages.gz
+ 5dc917523b56c917538ebe78db471d4378caf4f59201a8028a2b4342b672af50 189 main/binary-amd64/Release
+ aac8dc9b98176d04f7265e0209374c57ae0cfa969f2dc068fcf5ff07184df10a 706 main/binary-arm64/Packages
+ 5373dfb371d94622f742d1d29a38ae0441c110adbea81d15582e75961d0f0085 479 main/binary-arm64/Packages.gz
+ 9695f7a6b7fdf25f246ab07e620fa9421fb0993a3df4adef64a4bd03b7e2c1d3 189 main/binary-arm64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmsBsrsACgkQQWZzEzGo
+yHPk8g/9EnHomiCnsIecwG0x+znZFZsL4L3ACClYTqxuYH2/31xBiq4XvLFsauNH
+q0LZDetRBTCFa52d7vuU1w6AoD9yweQEqPkzGuzBXvgVAvfJ/s4hR6YCYOzifgxZ
+Bc9Zd727NV1Sdzl13qVDRw2Q107ElsRoGjNhPqSonMBAtcuLVy1HnhAbDhqNXPjq
+8jnKNWm+5AcPXtMKHgHvTd+nxfCWaHoF9Ddy1ge/pvVxU2KxQ1aRQ9PRB4bRpjRp
+5CpB6J5iwpgZAlePSwVLQgIPv0CPEk6spj9YM/LCP9pshlJ+P6o3A60sdFGJbBVa
+MQ2prdnuKa9gr/eHVMVsODp4x549xoTNzoFMUZdYD0HnZaiei/6SZqBAm5WWSfee
+hIEorrCUcCrK/SiIhEIihXGAbk6s2UiJpJYTSL7HhxXHZNlsmQpYW1taC1e+nLUY
+WcCEMNuEDCW6B8B3Kc5jTxhe1PkUPLSwF6+ik/ALIeyRG6ejeQ2qPSGwIxXuIiGE
+rA6cf86ur3ujsA/eRj/mpVe7rAKZLY0T2nfadb+TqRsYC5u4567g8SrH/DlPLRLs
+zXqkgY50NqJi0BjtYtKD0MSsYHvZUfPBTMquDQZlCJeOn7igr8vFznAOlAyTrCGZ
+uhfZk7a/4QMGzDablslel/VFymrOXX+Nr7L/y+tDoy2C4XLlGHY=
+=wCoR
+-----END PGP SIGNATURE-----
